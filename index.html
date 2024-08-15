@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Rohit Venugopal</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Rohit Venugopal</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#publications" onclick="toggleMenu()">Publications</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/about-pic.jpg" alt="Rohit Venugopal profile picture" class="profile-pic"/>
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="Rohit Venugopal">Rohit Venugopal</h1>
+            <p class="section__text__p2">Data Scientist</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume-rv.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/vrohit18/'"/>
+                <img src="./assets/github.png" alt="My GitHub profile" class="icon" onclick="location.href='https://github.com/Rohitv97'"/>
+                <img src="./assets/google-scholar.png" alt="My Google Scholar profile" class="icon" onclick="location.href='https://scholar.google.com/citations?user=QT5anPUAAAAJ&hl=en&oi=ao'"/>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/profile-pic.jpg" alt="Profile picture" class="about-pic"/>
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience icon" class="icon"/>
+                        <h3>Experience</h3>
+                        <p>3+ years <br />Data Science</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education icon" class="icon"/>
+                        <h3>Education</h3>
+                        <p>B.Tech. Computer Science & Engineering <br />M.Sc. Artificial Intelligence</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        As a Data Scientist with over three years of experience, I specialize in leading data science strategies and managing complex data pipelines. I have developed and deployed data-driven solutions, collaborating with multidisciplinary teams to ensure seamless integration and impactful outcomes. Proficient in Python and SQL, I excel in processing, cleaning, and verifying data integrity, as well as designing and implementing machine learning algorithms. My strong communication and teamwork skills have been essential in driving project success in both remote and hybrid environments.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'"/>
+    </section>
+
+    <section id="experience">
+        <p class="section__text__p1">Explore my</p>
+        <h1 class="title">Skills</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Data Science & AI</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Python</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Tensorflow</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Scikit-Learn</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Visualisation (Matplotlib, Seaborn, Plotly)</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Pandas</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Numpy</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>PowerBI</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>PyTorch</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Software Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>PHP</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Git</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>API Development</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Web Development</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Amazon Web Services (AWS)</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>SQL</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'"/>
+    </section>
+
+    <section id="projects">
+        <p class="section__text__p1">Browse Some Of My</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers project-blocks">
+                <div class="details-container color-container">
+                    <!-- <div class="article-container">
+                        <img src="./assets/project-1.png" alt="Project BCI" class="project-img">
+                    </div> -->
+                    <h2 class="experience-sub-title project-title">Asynchronous BCI Systems</h2>
+                    <div class="btn-container project-info-container">
+                        <p>Researched and developed BCI Systems using Python, Tensorflow and MNE for Cybathlon 2020</p>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Rohitv97/Cybathlon-BCI-Systems'">
+                            GitHub
+                        </button>
+                        <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                            Live Demo
+                        </button> -->
+                        
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <!-- <div class="article-container">
+                        <img src="./assets/project-2.png" alt="Project DeepColour" class="project-img">
+                    </div> -->
+                    <h2 class="experience-sub-title project-title">Deep-Color</h2>
+                    <div class="btn-container project-info-container">
+                        <p>Developed a convolutional neural network model with transfer learning to colorize grayscale images</p>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Rohitv97/Deep-Color'">
+                            GitHub
+                        </button>
+                        <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                            Live Demo
+                        </button> -->
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <!-- <div class="article-container">
+                        <img src="./assets/project-2.png" alt="Project DeepColour" class="project-img">
+                    </div> -->
+                    <h2 class="experience-sub-title project-title">Hanabi Agent</h2>
+                    <div class="btn-container project-info-container">
+                        <p>Developed an intelligent agent for the Hanabi card game using Java, and combining Monte Carlo Tree Search and neural networks</p>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Rohitv97/Hanabi-Agent'">
+                            GitHub
+                        </button>
+                        <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                            Live Demo
+                        </button> -->
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <!-- <div class="article-container">
+                        <img src="./assets/project-2.png" alt="Project DeepColour" class="project-img">
+                    </div> -->
+                    <h2 class="experience-sub-title project-title">Pioneer Robot Control Systems</h2>
+                    <div class="btn-container project-info-container">
+                        <p>Implemented obstacle avoidance and wall-following behaviour in robots using both fuzzy logic and neural networks in C++</p>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Rohitv97/fuzzy-logic-robot'">
+                            GitHub (Fuzzy Logic Solution)
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Rohitv97/Neural-Net-Aria'">
+                            GitHub (Neural Network Solution)
+                        </button>
+                        <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                            Live Demo
+                        </button> -->
+                    </div>
+                </div>
+                <!-- <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-3.png" alt="Project 3" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project One</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                            GitHub
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#publications'"/>
+    </section>
+
+    <br><br><br>
+
+    <section id="publications">
+        <p class="section__text__p1">Browse My</p>
+        <h1 class="title">Papers</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/pGan.jpg" alt="Project 1" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Privacy preserving Generative Adversarial Networks to model Electronic Health Records</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://doi.org/10.1016/j.neunet.2022.06.022'">
+                            Read Paper
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/ARM.jpg" alt="Project 2" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Association Rule Mining for Occupational Wellbeing During COVID</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://doi.org/10.1007/978-3-031-55568-8_45'">
+                            Read Paper
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'"/>
+    </section>
+
+    <section id="contact">
+        <p class="section__text__p1">Get In Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="email icon" class="icon contact-icon email-icon">
+                <p><a href="mailto:vrohit1807@gmail.com">vrohit1807@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="linkedin icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/vrohit18/">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Rohit Venugopal. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
